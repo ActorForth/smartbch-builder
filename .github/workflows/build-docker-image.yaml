@@ -21,7 +21,7 @@ jobs:
 
       - name: Build docker image
         run: |
-          docker build -f smartbch/Dockerfile.mainnet.optimized -t ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:$TAG ./
+          docker build -f smartbch/Dockerfile.mainnet.optimized -t ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:$TAG ./smartbch
 
       - name: Docker Login
         uses: docker/login-action@v1
