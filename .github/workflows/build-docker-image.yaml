@@ -16,6 +16,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+        with:
+          submodules: recursive
+          fetch-depth: 0
       - name: set-tag
         run: echo "TAG=$(git -C smartbch describe --always --tags --dirty --abbrev=7 | sed 's/^.*\(.\{7\}\)/\1/')" >> $GITHUB_ENV
 
