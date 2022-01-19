@@ -1,6 +1,3 @@
 [submodule "smartbch"]
 	path = smartbch
 	url = git@github.com:smartbch/smartbch.git
-[submodule "smartbch-amber"]
-	path = smartbch-amber
-	url = git@github.com:actorforth/smartbch.git
